@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  .container {
+    .navbar {
+      .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        .uldiv {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        ul {
+          gap: 40px;
+          font-size: 20px;
+          li {
+            a {
+              color: $main-color;
+            }
+          }
+        }
+        .btns {
+          .btn-outline-success {
+            border: none;
+          }
+          button {
+            color: $main-color;
+          }
+        }
+      }
+    }
+    .collapseDiv {
+      justify-content: flex-end;
+    }
+    .collapseList {
+      margin-right: 0px !important;
+    }
+  }
+}
+main {
+  #homesection {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/assets/img/h1-bacground-img-2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -20;
+    position: relative;
+
+    .container {
+      position: relative;
+      padding-top: 30px;
+      .row {
+        padding-top: 30px;
+        .hometext {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          padding-top: 30px;
+          h1 {
+            font-size: 70px;
+            color: $main-color;
+            font-weight: 400;
+          }
+          p {
+            color: $main-color;
+            font-size: 15px;
+          }
+          .shopbtn {
+            width: 200px;
+            height: 70px;
+            font-size: 15px;
+            background-color: transparent;
+            color: $main-color;
+            font-weight: 600;
+            border: 1px solid $main-color;
+            cursor: pointer;
+          }
+          .shopbtn:hover {
+            background-color: rgb(233, 201, 161);
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+}
+#ouroffers {
+  background-color: #ffffff;
+
+  .row {
+    .offers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 30px;
+      margin-bottom: 30px;
+      h1 {
+        font-size: 50px;
+        margin-top: 20px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 20px;
+        width: 50%;
+      }
+    }
+    .offertypes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      h5 {
+        font-weight: 400;
+      }
+      p {
+        color: #9595ca;
+        width: 80%;
+        font-size: 15px;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        transition: 0.5s;
+      }
+      button:hover {
+        color: #be9c79;
+      }
+    }
+  }
+}
+#herald {
+  margin-top: 30px;
+  background-image: url(/assets/img/new-new-h1-bacground-img-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .heraldstitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 20px;
+      width: 50%;
+    }
+  }
+  .aboutcoffeeshop {
+    padding: 20px;
+
+    h5 {
+      font-weight: 500;
+    }
+    p {
+      color: #9595ca;
+      font-size: 15px;
+    }
+
+    img {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+      color: $second-color;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      transition: 0.5s;
+    }
+    button:hover {
+      color: #be9c79;
+    }
+  }
+}
+#logosection {
+  background-image: url(/assets/img/h1-bacground-img-2.jpg);
+  img {
+    margin: 30px 30px 30px 30px;
+  }
+  .row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    .shoplogo {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 30px;
+      img {
+        margin: 30px 30px 30px 30px;
+      }
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+#informationcoffeesale {
+  padding: 30px;
+  .container {
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .row {
+      margin-top: 30px;
+      .infodiv {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h1 {
+          color: #be9c79;
+          font-size: 70px;
+          font-family: Marcellus, sans-serif;
+        }
+        h5 {
+          font-weight: 500;
+        }
+        p {
+          color: #9595ca;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+#onlineshop {
+  .container {
+    .row {
+      .coffetypes {
+        img {
+          width: 100%;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        h1 {
+          font-size: 50px;
+          margin-top: 20px;
+          font-weight: 400;
+        }
+        p {
+          font-size: 20px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+#onlineshop {
+  background-image: url(/assets/img/h1-bacground-img-1.jpg);
+
+  .row {
+    .offers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 30px;
+      margin-bottom: 30px;
+      h1 {
+        font-size: 50px;
+        margin-top: 20px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 20px;
+        width: 50%;
+      }
+    }
+    .offertypes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 30px;
+      button {
+        background-color: transparent;
+        border: none;
+        transition: 0.5s;
+      }
+      button:hover {
+        color: #be9c79;
+      }
+      img {
+        width: 100%;
+      }
+      h5 {
+        font-weight: 400;
+      }
+      p {
+        color: #9595ca;
+        width: 80%;
+        font-size: 15px;
+      }
+    }
+  }
+}
+#gallery {
+  .row {
+    .offers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 30px;
+      margin-bottom: 30px;
+      h1 {
+        font-size: 50px;
+        margin-top: 20px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 20px;
+        width: 50%;
+      }
+    }
+    .imgdiv {
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+#logosofshop {
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .row {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .logos {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+#contact {
+  background-image: url(/assets/img/p2-background-img-1.jpg);
+  padding: 30px;
+
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .row {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .h5div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          font-size: 50px;
+        }
+      }
+      .btndiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          background-color: #be9c79;
+          border: none;
+          color: $main-color;
+          font-size: 15px;
+          font-weight: 400;
+          width: 180px;
+          height: 60px;
+        }
+        button:hover {
+          background-color: $second-color;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+#address {
+  background-image: url(/assets/img/footer-top-img-1.jpg);
+  padding: 30px;
+  .container {
+    margin-top: 30px;
+
+    .row {
+      .nameshop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $main-color;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        p {
+          width: 600px;
+        }
+      }
+      .addressdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        h5 {
+          color: $main-color;
+        }
+        p {
+          color: $main-color;
+          width: 300px;
+          margin-bottom: 0px;
+        }
+        p:hover {
+          color: #be9c79;
+          transition: 0.5s;
+        }
+      }
+      .emaildiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 15px;
+        h5 {
+          color: $main-color;
+        }
+        form {
+          display: flex;
+          input {
+            width: 280px;
+            border: 2px solid $main-color;
+            background-color: transparent;
+            padding: 20px;
+          }
+          button {
+            width: 80px;
+            background-color: $main-color;
+            border: none;
+            font-size: 30px;
+          }
+          button:hover {
+            background-color: #be9c79;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: #121212;
+  padding: 30px;
+
+  .container {
+    margin-top: 30px;
+    .row {
+      .year {
+        color: $main-color;
+        cursor: pointer;
+        p:hover {
+          color: #be9c79;
+          transition: 0.5s;
+        }
+      }
+
+      .list {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul {
+          display: flex;
+          list-style: none;
+          gap: 20px;
+          li {
+            color: $main-color;
+            cursor: pointer;
+          }
+          li:hover {
+            color: #be9c79;
+            transition: 0.5s;
+          }
+        }
+      }
+      .socialmedia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        button {
+          font-size: 20px;
+          border: none;
+          background-color: transparent;
+          color: $main-color;
+        }
+        button:hover {
+          color: #be9c79;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
